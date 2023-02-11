@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -8,16 +9,15 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        minSdk = 26
-        targetSdk = 33
+        minSdk = Dependencies.AppConfig.minSdk
+        targetSdk = Dependencies.AppConfig.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -29,13 +29,18 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Dependencies.AppConfig.jvmTarget
     }
 }
 
 dependencies {
 
-    implementation(project(Dependencies.Modules.app))
+    implementation(project(Dependencies.Modules.cryptocurrencies))
+    implementation(project(Dependencies.Modules.login))
+    implementation(project(Dependencies.Modules.profile))
+    implementation(project(Dependencies.Modules.splashscreen))
+    implementation(project(Dependencies.Modules.stocks))
+    implementation(project(Dependencies.Modules.finance))
 
     implementation(Dependencies.AndroidXLibraries.navigationfragment)
     implementation(Dependencies.AndroidXLibraries.navigationui)

@@ -33,14 +33,14 @@ object Dependencies {
         const val profile = ":feature_profile"
         const val splashscreen = ":feature_splashscreen"
         const val navigation = ":navigation"
+        const val finance = ":feature_finance"
     }
 
     object AndroidXLibraries {
         const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
         const val material = "com.google.android.material:material:${Versions.material}"
         const val corektx = "androidx.core:core-ktx:${Versions.corektx}"
-        const val constraintlayout =
-            "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
+        const val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
         const val navigationfragment ="androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
         const val navigationui = "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
         const val navigationfeaturemodule = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.nav_version}"

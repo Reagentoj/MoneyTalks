@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = Dependencies.AppConfig.namespace
-    compileSdk = Dependencies.AppConfig.compileSdk
+    compileSdk = 33
 
     defaultConfig {
         applicationId = Dependencies.AppConfig.applicationId
@@ -38,11 +38,14 @@ android {
 
 dependencies {
 
+    implementation(project(Dependencies.Modules.cryptocurrencies))
     implementation(project(Dependencies.Modules.login))
     implementation(project(Dependencies.Modules.profile))
-    implementation(project(Dependencies.Modules.cryptocurrencies))
-    implementation(project(Dependencies.Modules.stocks))
     implementation(project(Dependencies.Modules.splashscreen))
+    implementation(project(Dependencies.Modules.stocks))
+    implementation(project(Dependencies.Modules.finance))
+    implementation(project(Dependencies.Modules.navigation))
+
 
     implementation(Dependencies.Libraries.dagger)
     kapt(Dependencies.Libraries.daggercompiler)

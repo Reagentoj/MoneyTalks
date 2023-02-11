@@ -6,7 +6,9 @@ include (
     ":feature_profile",
     ":feature_stocks",
     ":feature_login",
-    ":feature_splashscreen"
+    ":feature_splashscreen",
+    ":feature_finance",
+    ":navigation"
 )
 
 pluginManagement {
@@ -27,3 +29,4 @@ dependencyResolutionManagement {
 
 include(":feature_splashscreen")
 include(":navigation")
+include(":feature_finance")

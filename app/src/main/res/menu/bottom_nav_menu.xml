@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/financeFragment"
+        android:icon="@drawable/finance_icon"
+        android:title="Finance"/>
+    <item
+        android:id="@+id/cryptocurrenciesFragment"
+        android:icon="@drawable/cryptocurrency_icon"
+        android:title="Crypto"/>
+    <item
+        android:id="@+id/stocksFragment"
+        android:icon="@drawable/stocks_icon"
+        android:title="Stocks"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"/>
+
+</menu>
