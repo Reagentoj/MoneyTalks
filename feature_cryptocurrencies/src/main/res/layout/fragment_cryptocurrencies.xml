@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".presentation.CryptocurrenciesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="crypto fragment" />
+        android:id="@+id/current_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:text="Current balance"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/current_balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$10 435, 54"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/current_balance"
+        app:layout_constraintTop_toBottomOf="@id/current_balance" />
+
+    <TextView
+        android:id="@+id/balance_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ $205 (2,13%)"
+        android:textColor="#17C611"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/current_balance_value"
+        app:layout_constraintTop_toBottomOf="@id/current_balance_value" />
+
+    <ImageView
+        android:id="@+id/add_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_transaction"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintTop_toTopOf="@id/current_balance"
+        app:layout_constraintBottom_toBottomOf="@id/current_balance"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/round_visibility_24"
+        app:layout_constraintTop_toTopOf="@id/current_balance"
+        app:layout_constraintBottom_toBottomOf="@id/current_balance"
+        app:layout_constraintEnd_toStartOf="@id/add_transaction"/>
+
+    <ImageView
+        android:id="@+id/visibility_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/current_balance"
+        app:layout_constraintBottom_toBottomOf="@id/current_balance"
+        app:layout_constraintEnd_toStartOf="@id/add_transaction"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_assets_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/balance_change" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
