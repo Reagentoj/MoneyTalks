@@ -39,8 +39,10 @@ android {
 dependencies {
 
     kapt (Dependencies.Libraries.kapt)
-    implementation (Dependencies.Libraries.dagger)
-    implementation (Dependencies.Libraries.daggercompiler)
+    implementation(Dependencies.Libraries.dagger)
+    implementation(Dependencies.Libraries.daggercompiler)
+    implementation(Dependencies.Libraries.retrofit)
+    implementation(Dependencies.Libraries.retrofitconverter)
 
     implementation (Dependencies.AndroidXLibraries.corektx)
     implementation (Dependencies.AndroidXLibraries.appcompat)
