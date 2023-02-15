@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_crypto"
+    app:startDestination="@id/cryptocurrenciesFragment">
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.example.feature_cryptocurrencies.presentation.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" >
+        <action
+            android:id="@+id/action_transactionFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_transactionFragment_to_cryptocurrenciesFragment"
+            app:destination="@id/cryptocurrenciesFragment" />
+        <deepLink app:uri="CryptocurrenciesFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.feature_cryptocurrencies.presentation.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_cryptocurrenciesFragment"
+            app:destination="@id/cryptocurrenciesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptocurrenciesFragment"
+        android:name="com.example.feature_cryptocurrencies.presentation.CryptocurrenciesFragment"
+        android:label="fragment_cryptocurrencies"
+        tools:layout="@layout/fragment_cryptocurrencies" >
+        <action
+            android:id="@+id/action_cryptocurrenciesFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+</navigation>

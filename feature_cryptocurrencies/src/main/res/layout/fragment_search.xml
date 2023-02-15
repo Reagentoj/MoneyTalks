@@ -37,7 +37,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_tv"
         app:queryBackground="@android:color/transparent"
-        app:queryHint="Search" />
+        app:queryHint="Search"
+        android:background="@drawable/search_component_shape" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cryptocurrencies_rv"

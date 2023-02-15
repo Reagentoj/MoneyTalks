@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.feature_cryptocurrencies.R
 import com.example.feature_cryptocurrencies.databinding.FragmentCryptocurrenciesBinding
 
@@ -19,10 +21,20 @@ class CryptocurrenciesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentCryptocurrenciesBinding.inflate(inflater, container, false)
-        binding.addTransaction.setOnClickListener{}
 
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val navController = findNavController()
+        binding.addTransaction.setOnClickListener{navController.navigate(R.id.searchFragment)}
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 }

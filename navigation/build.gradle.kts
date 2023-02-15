@@ -44,7 +44,7 @@ dependencies {
 
     implementation(Dependencies.AndroidXLibraries.navigationfragment)
     implementation(Dependencies.AndroidXLibraries.navigationui)
-    implementation(Dependencies.AndroidXLibraries.navigationfeaturemodule)
+    implementation(Dependencies.AndroidXLibraries.navigationdynamicfeaturemodule)
     implementation(Dependencies.AndroidXLibraries.corektx)
     implementation(Dependencies.AndroidXLibraries.appcompat)
     implementation(Dependencies.AndroidXLibraries.material)

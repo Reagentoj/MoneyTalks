@@ -35,11 +35,19 @@ android {
 
 dependencies {
 
-    implementation(Dependencies.AndroidXLibraries.corektx)
-    implementation(Dependencies.AndroidXLibraries.appcompat)
-    implementation(Dependencies.AndroidXLibraries.material)
-    implementation(Dependencies.AndroidXLibraries.constraintlayout)
-    implementation(Dependencies.AndroidXLibraries.navigationui)
-    implementation(Dependencies.AndroidXLibraries.navigationfeaturemodule)
+    kapt (Dependencies.Libraries.kapt)
+    implementation (Dependencies.Libraries.dagger)
+    implementation (Dependencies.Libraries.daggercompiler)
+
+    implementation (Dependencies.AndroidXLibraries.corektx)
+    implementation (Dependencies.AndroidXLibraries.appcompat)
+    implementation (Dependencies.AndroidXLibraries.material)
+    implementation (Dependencies.AndroidXLibraries.constraintlayout)
     implementation(Dependencies.AndroidXLibraries.navigationfragment)
+    implementation(Dependencies.AndroidXLibraries.navigationui)
+    implementation(Dependencies.AndroidXLibraries.navigationdynamicfeaturemodule)
+
+    testImplementation (Dependencies.TestLibraries.junit)
+    androidTestImplementation (Dependencies.TestLibraries.espresso)
+
 }

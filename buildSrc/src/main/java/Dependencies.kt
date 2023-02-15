@@ -16,9 +16,8 @@ object Dependencies {
         const val material = "1.8.0"
         const val corektx = "1.9.0"
         const val constraintlayout = "2.1.4"
-
         const val dagger = "2.44.2"
-
+        const val kapt = "2.44.2"
         const val nav_version = "2.5.3"
 
         const val junit = "4.13.2"
@@ -43,12 +42,13 @@ object Dependencies {
         const val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
         const val navigationfragment ="androidx.navigation:navigation-fragment-ktx:${Versions.nav_version}"
         const val navigationui = "androidx.navigation:navigation-ui-ktx:${Versions.nav_version}"
-        const val navigationfeaturemodule = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.nav_version}"
+        const val navigationdynamicfeaturemodule = "androidx.navigation:navigation-dynamic-features-fragment:${Versions.nav_version}"
     }
 
     object Libraries {
         const val daggercompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
+        const val kapt = "com.google.dagger:dagger-compiler:${Versions.kapt}"
     }
 
     object TestLibraries {

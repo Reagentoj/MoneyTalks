@@ -103,4 +103,5 @@
             android:id="@+id/action_transactionFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
     </fragment>
+
 </navigation>

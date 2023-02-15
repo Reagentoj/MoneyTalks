@@ -55,7 +55,7 @@ dependencies {
     implementation(Dependencies.AndroidXLibraries.material)
     implementation(Dependencies.AndroidXLibraries.constraintlayout)
     implementation(Dependencies.AndroidXLibraries.navigationui)
-    implementation(Dependencies.AndroidXLibraries.navigationfeaturemodule)
+    implementation(Dependencies.AndroidXLibraries.navigationdynamicfeaturemodule)
     implementation(Dependencies.AndroidXLibraries.navigationfragment)
 
     testImplementation(Dependencies.TestLibraries.junit)
