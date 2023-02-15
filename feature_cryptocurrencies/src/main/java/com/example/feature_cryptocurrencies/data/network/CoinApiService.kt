@@ -11,7 +11,6 @@ import retrofit2.http.Header
  * @author Kantemir Tatarkanov
  * 15.02.2023
  */
-
 interface CoinApiService {
     @GET("v1/cryptocurrency/listings/latest")
     suspend fun getCoins(@Header(Const.API_HEADER) apiKey: String): Response<CoinModel>

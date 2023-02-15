@@ -9,6 +9,10 @@ import com.example.feature_cryptocurrencies.R
 import com.example.feature_cryptocurrencies.databinding.FragmentTransactionBinding
 
 
+/**
+ * @author Kantemir Tatarkanov
+ * 14.02.2023
+ */
 class TransactionFragment : Fragment() {
 
     private var _binding: FragmentTransactionBinding? = null

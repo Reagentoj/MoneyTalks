@@ -10,6 +10,10 @@ import com.example.feature_cryptocurrencies.R
 import com.example.feature_cryptocurrencies.databinding.FragmentSearchBinding
 
 
+/**
+ * @author Kantemir Tatarkanov
+ * 14.02.2023
+ */
 class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
