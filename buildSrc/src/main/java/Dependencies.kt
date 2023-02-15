@@ -19,6 +19,8 @@ object Dependencies {
         const val dagger = "2.44.2"
         const val kapt = "2.44.2"
         const val nav_version = "2.5.3"
+        const val retrofit = "2.9.0"
+        const val room = "2.5.0"
 
         const val junit = "4.13.2"
         const val espresso = "3.5.1"
@@ -46,6 +48,13 @@ object Dependencies {
     }
 
     object Libraries {
+        const val roomruntime = "androidx.room:room-runtime:${Versions.room}"
+        const val roomktx = "androidx.room:room-ktx:${Versions.room}"
+        const val roomap = "androidx.room:room-compiler:${Versions.room}"
+        const val roomkapt = "androidx.room:room-compiler:${Versions.room}"
+
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+        const val retrofitconverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
         const val daggercompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
         const val kapt = "com.google.dagger:dagger-compiler:${Versions.kapt}"
