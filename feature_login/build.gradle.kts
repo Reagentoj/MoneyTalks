@@ -35,7 +35,7 @@ android {
 
 dependencies {
 
-    kapt (Dependencies.Libraries.kapt)
+    kapt (Dependencies.Libraries.daggerkapt)
     implementation (Dependencies.Libraries.dagger)
     implementation (Dependencies.Libraries.daggercompiler)
 

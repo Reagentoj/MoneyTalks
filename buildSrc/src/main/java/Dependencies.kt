@@ -17,6 +17,7 @@ object Dependencies {
         const val corektx = "1.9.0"
         const val constraintlayout = "2.1.4"
         const val dagger = "2.44.2"
+        const val hilt = "2.45"
         const val kapt = "2.44.2"
         const val nav_version = "2.5.3"
         const val retrofit = "2.9.0"
@@ -57,7 +58,10 @@ object Dependencies {
         const val retrofitconverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
         const val daggercompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
-        const val kapt = "com.google.dagger:dagger-compiler:${Versions.kapt}"
+        const val daggerkapt = "com.google.dagger:dagger-compiler:${Versions.kapt}"
+        const val hiltplugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
+        const val hiltandroid = "com.google.dagger:hilt-android:${Versions.hilt}"
+        const val hiltkapt = "com.google.dagger:hilt-compiler:${Versions.hilt}"
     }
 
     object TestLibraries {
