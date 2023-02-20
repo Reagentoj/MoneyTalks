@@ -58,7 +58,6 @@ object Dependencies {
         const val retrofitconverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
         const val daggercompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
-        const val daggerkapt = "com.google.dagger:dagger-compiler:${Versions.kapt}"
         const val hiltplugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
         const val hiltandroid = "com.google.dagger:hilt-android:${Versions.hilt}"
         const val hiltkapt = "com.google.dagger:hilt-compiler:${Versions.hilt}"

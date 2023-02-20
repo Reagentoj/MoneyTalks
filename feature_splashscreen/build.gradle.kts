@@ -35,9 +35,8 @@ android {
 
 dependencies {
 
-    kapt (Dependencies.Libraries.daggerkapt)
+    kapt (Dependencies.Libraries.daggercompiler)
     implementation (Dependencies.Libraries.dagger)
-    implementation (Dependencies.Libraries.daggercompiler)
 
     implementation (Dependencies.AndroidXLibraries.corektx)
     implementation (Dependencies.AndroidXLibraries.appcompat)

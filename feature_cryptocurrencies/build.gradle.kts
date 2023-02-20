@@ -1,6 +1,5 @@
 plugins {
     id ("com.android.library")
-    id ("com.google.dagger.hilt.android")
     kotlin("android")
     kotlin("kapt")
 }
@@ -43,12 +42,8 @@ android {
 
 dependencies {
 
-    kapt (Dependencies.Libraries.daggerkapt)
+    kapt (Dependencies.Libraries.daggercompiler)
     implementation(Dependencies.Libraries.dagger)
-    implementation(Dependencies.Libraries.daggercompiler)
-    implementation(Dependencies.Libraries.hiltandroid)
-    implementation(Dependencies.Libraries.hiltplugin)
-    implementation(Dependencies.Libraries.hiltkapt)
     implementation(Dependencies.Libraries.retrofit)
     implementation(Dependencies.Libraries.retrofitconverter)
 
