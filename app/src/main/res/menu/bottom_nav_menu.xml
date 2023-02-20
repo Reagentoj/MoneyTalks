@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/financeFragment"
+        android:id="@+id/nav_finance"
         android:icon="@drawable/finance_icon"
         android:title="Finance"/>
     <item
-        android:id="@+id/cryptocurrenciesFragment"
+        android:id="@+id/nav_crypto"
         android:icon="@drawable/cryptocurrency_icon"
         android:title="Crypto"/>
     <item
-        android:id="@+id/stocksFragment"
+        android:id="@+id/nav_stocks"
         android:icon="@drawable/stocks_icon"
         android:title="Stocks"/>
     <item
-        android:id="@+id/profileFragment"
+        android:id="@+id/nav_profile"
         android:icon="@drawable/profile_icon"
         android:title="Profile"/>
 

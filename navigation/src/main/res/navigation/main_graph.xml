@@ -2,106 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_graph"
-    app:startDestination="@id/financeFragment">
+    app:startDestination="@id/splashFragment">
+
+    <include app:graph="@navigation/nav_finance"/>
+    <include app:graph="@navigation/nav_stocks"/>
+    <include app:graph="@navigation/nav_profile"/>
+    <include app:graph="@navigation/nav_crypto"/>
+
     <fragment
-        android:id="@+id/cryptocurrenciesFragment"
-        android:name="com.example.feature_cryptocurrencies.presentation.ui.CryptocurrenciesFragment"
-        android:label="CryptocurrenciesFragment" >
+        android:id="@+id/splashFragment"
+        android:name="com.example.feature_splashscreen.presentation.SplashFragment"
+        android:label="SplashFragment" >
         <action
-            android:id="@+id/action_cryptocurrenciesFragment_to_stocksFragment"
-            app:destination="@id/stocksFragment" />
-        <action
-            android:id="@+id/action_cryptocurrenciesFragment_to_profileFragment2"
-            app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/action_cryptocurrenciesFragment_to_financeFragment"
-            app:destination="@id/financeFragment" />
-        <action
-            android:id="@+id/action_cryptocurrenciesFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.feature_profile.presentation.ProfileFragment"
-        android:label="ProfileFragment" >
-        <action
-            android:id="@+id/action_profileFragment_to_stocksFragment2"
-            app:destination="@id/stocksFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_cryptocurrenciesFragment2"
-            app:destination="@id/cryptocurrenciesFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_financeFragment"
-            app:destination="@id/financeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.example.feature_login.presentation.SignInFragment"
-        android:label="SignInFragment" >
-        <action
-            android:id="@+id/action_signInFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/signUpFragment"
-        android:name="com.example.feature_login.presentation.SignUpFragment"
-        android:label="SignUpFragment" >
-        <action
-            android:id="@+id/action_signUpFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
-        <action
-            android:id="@+id/action_signUpFragment_to_financeFragment"
-            app:destination="@id/financeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/stocksFragment"
-        android:name="com.example.feature_stocks.presentation.StocksFragment"
-        android:label="StocksFragment" >
-        <action
-            android:id="@+id/action_stocksFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/action_stocksFragment_to_cryptocurrenciesFragment2"
-            app:destination="@id/cryptocurrenciesFragment" />
-        <action
-            android:id="@+id/action_stocksFragment_to_financeFragment"
-            app:destination="@id/financeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/financeFragment"
-        android:name="com.example.feature_finance.FinanceFragment"
-        android:label="FinanceFragment" >
-        <action
-            android:id="@+id/action_financeFragment_to_cryptocurrenciesFragment"
-            app:destination="@id/cryptocurrenciesFragment" />
-        <action
-            android:id="@+id/action_financeFragment_to_stocksFragment"
-            app:destination="@id/stocksFragment" />
-        <action
-            android:id="@+id/action_financeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.feature_cryptocurrencies.presentation.ui.SearchFragment"
-        android:label="SearchFragment" >
-        <action
-            android:id="@+id/action_searchFragment_to_cryptocurrenciesFragment"
-            app:destination="@id/cryptocurrenciesFragment" />
-        <action
-            android:id="@+id/action_searchFragment_to_transactionFragment"
-            app:destination="@id/transactionFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/transactionFragment"
-        android:name="com.example.feature_cryptocurrencies.presentation.ui.TransactionFragment"
-        android:label="TransactionFragment" >
-        <action
-            android:id="@+id/action_transactionFragment_to_cryptocurrenciesFragment"
-            app:destination="@id/cryptocurrenciesFragment" />
-        <action
-            android:id="@+id/action_transactionFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+            android:id="@+id/action_splashFragment_to_nav_finance"
+            app:destination="@id/nav_finance" />
     </fragment>
 
 </navigation>
